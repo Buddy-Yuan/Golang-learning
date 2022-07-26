@@ -21,7 +21,7 @@ type user struct {
 }
 
 func (f *mysql_db) mysqlOpen() {
-	db, err := sql.Open("mysql", "tidb:123456@tcp(120.92.86.147:4000)/test")
+	db, err := sql.Open("mysql", "tidb:123456@tcp(xx.xx.xx.xx:4000)/test")
 	if err != nil {
 		fmt.Println("connection database failed")
 	} else {
